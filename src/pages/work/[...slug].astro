@@ -15,8 +15,8 @@ entry:CollectionEntry<'work'>;
 export async function getStaticPaths() {
 	const work = await getCollection('work');
 	return work.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
+		params:{ slug:entry.slug },
+		props:{ entry },
 	}));
 }
 
